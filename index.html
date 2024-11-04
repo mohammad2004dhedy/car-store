@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -41,8 +41,12 @@
     </main>
     <section class="about">
       <div class="container">
-        <img src="images/carInDark.jpg" alt="car in about section" />
-        <div class="info">
+        <img
+          data-aos="fade-left"
+          src="images/carInDark.jpg"
+          alt="car in about section"
+        />
+        <div class="info" data-aos="fade-right">
           <h2>About Carmony</h2>
           <p>
             Carmony – your trusted platform for discovering, buying, and selling
@@ -63,7 +67,7 @@
     <section class="store">
       <div class="container">
         <h3>browse out available cars</h3>
-        <div class="thumbnail">
+        <div class="thumbnail" data-aos="fade-up">
           <span class="active" data-brand="all">all</span>
           <span data-brand="kia">kia</span>
           <span data-brand="porche">porche</span>
@@ -71,7 +75,7 @@
           <span data-brand="tesla">tesla</span>
         </div>
         <div class="content">
-          <div class="card active" data-brand="tesla">
+          <div class="card active" data-aos="fade-up" data-brand="tesla">
             <div class="carBrand">TESLA</div>
             <span class="carCategory">Turbo S</span>
             <img
@@ -96,7 +100,7 @@
             <div class="price">$ 195,900</div>
             <i class="fa-solid fa-bag-shopping addToCart"></i>
           </div>
-          <div class="card active" data-brand="kia">
+          <div data-aos="fade-up" class="card active" data-brand="kia">
             <div class="carBrand">TESLA</div>
             <span class="carCategory">Turbo S</span>
             <img
@@ -121,7 +125,7 @@
             <div class="price">$ 195,900</div>
             <i class="fa-solid fa-bag-shopping addToCart"></i>
           </div>
-          <div class="card active" data-brand="skoda">
+          <div data-aos="fade-up" class="card active" data-brand="skoda">
             <div class="carBrand">TESLA</div>
             <span class="carCategory">Turbo S</span>
             <img
@@ -159,7 +163,7 @@
           </p>
           <button type="button">subscribe now</button>
         </div>
-        <img data-aos="fade-left" src="images/teslacar.png" alt="">
+        <img data-aos="fade-left" src="images/teslacar.png" alt="" />
       </div>
     </section>
     <script src="app.js"></script>

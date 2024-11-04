@@ -329,16 +329,13 @@ main .container .content > a span {
   background: #2f2f2f81;
   color: white;
   padding: 15px;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   transition: 300ms;
-  transform: scale(0);
-  opacity: 0;
+  display: none;
 }
 .store .container .content .card.active {
-  position: relative;
-  transform: scale(1);
-  opacity: 1;
+ display: block;
 }
 .store .container .content .card .carBrand {
   font-weight: bold;
