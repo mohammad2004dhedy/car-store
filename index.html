@@ -6,6 +6,11 @@
     <title>carmony</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -58,8 +63,15 @@
     <section class="store">
       <div class="container">
         <h3>browse out available cars</h3>
+        <div class="thumbnail">
+          <span class="active" data-brand="all">all</span>
+          <span data-brand="kia">kia</span>
+          <span data-brand="porche">porche</span>
+          <span data-brand="skoda">skoda</span>
+          <span data-brand="tesla">tesla</span>
+        </div>
         <div class="content">
-          <div class="card">
+          <div class="card active" data-brand="tesla">
             <div class="carBrand">TESLA</div>
             <span class="carCategory">Turbo S</span>
             <img
@@ -84,7 +96,7 @@
             <div class="price">$ 195,900</div>
             <i class="fa-solid fa-bag-shopping addToCart"></i>
           </div>
-          <div class="card">
+          <div class="card active" data-brand="kia">
             <div class="carBrand">TESLA</div>
             <span class="carCategory">Turbo S</span>
             <img
@@ -109,7 +121,7 @@
             <div class="price">$ 195,900</div>
             <i class="fa-solid fa-bag-shopping addToCart"></i>
           </div>
-          <div class="card">
+          <div class="card active" data-brand="skoda">
             <div class="carBrand">TESLA</div>
             <span class="carCategory">Turbo S</span>
             <img
@@ -137,6 +149,24 @@
         </div>
       </div>
     </section>
+    <section class="offers">
+      <div class="container">
+        <div class="info" data-aos="fade-right">
+          <h2>Do you want to recieve special offers ?</h2>
+          <p>
+            be the first to receive all the information about our products and
+            new cars by email by subscribing to our mailing list
+          </p>
+          <button type="button">subscribe now</button>
+        </div>
+        <img data-aos="fade-left" src="images/teslacar.png" alt="">
+      </div>
+    </section>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

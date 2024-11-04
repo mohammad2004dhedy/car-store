@@ -15,3 +15,24 @@ navMenuItems.forEach((item) => {
   });
 });
 // nav js code end
+// store js code start
+let thumbnailItems = document.querySelectorAll(".thumbnail span");
+let StoreCards = document.querySelectorAll(".store .container .content .card");
+thumbnailItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    thumbnailItems.forEach((i) => {
+      i.classList.remove("active");
+    });
+    item.classList.add("active");
+    StoreCards.forEach((card) => {
+      card.classList.remove("active");
+      if (
+        card.getAttribute("data-brand") == item.getAttribute("data-brand") ||
+        item.getAttribute("data-brand") == "all"
+      ) {
+        card.classList.add("active");
+      }
+    });
+  });
+});
+// store js code end
