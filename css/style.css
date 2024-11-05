@@ -335,7 +335,7 @@ main .container .content > a span {
   display: none;
 }
 .store .container .content .card.active {
- display: block;
+  display: block;
 }
 .store .container .content .card .carBrand {
   font-weight: bold;
@@ -428,11 +428,11 @@ main .container .content > a span {
   background: url("../images/blackStage.jpg");
   background-position: center;
   background-size: cover;
-  height:100vh;
+  height: 100vh;
   min-height: 60vh;
-  max-height:80vh;
+  max-height: 80vh;
   position: relative;
-  margin:50px 0;
+  margin: 50px 0;
 }
 .offers::before {
   content: "";
@@ -453,41 +453,176 @@ main .container .content > a span {
   align-items: center;
   height: 100%;
 }
-.offers .container .info{
-  flex-basis:40%;
+.offers .container .info {
+  flex-basis: 40%;
 }
-.offers .container .info h2{
-  font-size:30px;
+.offers .container .info h2 {
+  font-size: 30px;
   text-transform: capitalize;
   letter-spacing: 1px;
 }
-.offers .container .info p{
-  line-height:1.5;
+.offers .container .info p {
+  line-height: 1.5;
   color: var(--sub-text-color);
-  margin:40px 0;
+  margin: 40px 0;
 }
-.offers .container .info button{
+.offers .container .info button {
   background: var(--green-color);
   border: none;
   outline: none;
-  padding:10px 25px;
+  padding: 10px 25px;
   font-size: 20px;
   cursor: pointer;
 }
-.offers .container img{
- width:40%;
- filter: drop-shadow(0 0px 5px rgb(0, 0, 0));
+.offers .container img {
+  width: 40%;
+  filter: drop-shadow(0 0px 5px rgb(0, 0, 0));
 }
-@media (max-width:991px) {
-  .offers .container{
+@media (max-width: 991px) {
+  .offers .container {
     flex-direction: column;
     text-align: center;
   }
-  .offers .container img{
+  .offers .container img {
     display: block;
-    margin:50px 0;
-    min-width:290px;
-    max-width:400px;
+    margin: 50px 0;
+    min-width: 290px;
+    max-width: 400px;
   }
 }
 /* offers section end*/
+/* cars over view secion start */
+.carsOverView {
+  padding: 50px 0;
+  background: var(--black-color);
+}
+.carsOverView .container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  overflow-x: scroll;
+}
+.carsOverView .container img {
+  width: 200px;
+  object-fit: cover;
+  filter: brightness(0.5);
+  filter: drop-shado(0 0 10px #dfdfdf);
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
+/* cars over view secion end */
+/* contact section start */
+.contact {
+  padding: 50px 0;
+}
+.contact .container {
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+}
+.contact .container .ContactHead {
+  margin: 0 auto 40px;
+}
+.contact .container .ContactHead h3 {
+  text-transform: capitalize;
+  letter-spacing: 0.6px;
+  font-size: 30px;
+}
+.contact .container .ContactHead p {
+  color: var(--sub-text-color);
+  margin: 25px 0 0;
+}
+.contact .container .contactsMethods {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.contact .container .contactsMethods .method {
+  width: 225px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  background-color: var(--blue-color);
+  transform: scale(0.98);
+}
+.contact .container .contactsMethods .method i {
+  font-size: 28px;
+}
+.contact .container .contactsMethods .method p {
+  color: var(--sub-text-color);
+  font-size: 14px;
+}
+.contact .container .contactsMethods .method:nth-child(even) {
+  background-color: var(--green-color);
+  transform: scale(1.05);
+}
+.contact .container form {
+  padding: 25px;
+  border: solid 1px var(--sub-text-color);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact .container form > h4 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+.contact .container form > div {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .container form div input,
+.contact .container form div select {
+  width: 50%;
+  padding: 12px;
+  border: solid 1px var(--sub-text-color);
+  border-radius: 18px;
+  color: var(--white-color);
+  background-color: transparent;
+}
+.contact .container form textarea {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  border: solid 1px var(--sub-text-color);
+  padding: 15px;
+  color: white;
+}
+.contact .container form input[type="submit"]{
+  border: none;
+  outline:none;
+  background: var(--green-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size:16px;
+text-transform:uppercase;
+cursor: pointer;
+}
+
+@media (max-width: 499px) {
+  .contact .container form > div {
+    flex-direction: column;
+  }
+  .contact .container form div input,
+  .contact .container form div select {
+    width: 100%;
+  }
+}
+/* contact section end */
