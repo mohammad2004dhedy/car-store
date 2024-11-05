@@ -202,16 +202,15 @@
           </div>
         </div>
 
-
         <form>
           <h4>send us a message</h4>
           <div>
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
+            <input required type="text" placeholder="Name" />
+            <input required type="email" placeholder="Email" />
           </div>
           <div>
-            <input type="tel" placeholder="Phone" />
-            <select>
+            <input required type="tel" placeholder="Phone" />
+            <select required>
               <option disabled selected>subject</option>
               <option value=" buy a car">i want to buy a car</option>
               <option value="rent a car">i want to rent a car</option>
@@ -224,16 +223,69 @@
               <option value=" elser">something else</option>
             </select>
           </div>
-          <textarea name="message" placeholder="Write Message ..." ></textarea>
-          <input type="submit" value="send">
+          <textarea
+            required
+            name="message"
+            placeholder="Write Message ..."
+          ></textarea>
+          <input type="submit" value="send" />
         </form>
-        
       </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="content">
+          <div class="logo">
+            <i class="fa-solid fa-diamond"></i><span>carmony</span>
+            <p>
+              we offer multible ways of abstraction to give you more flexibility
+              while of choosing the best car for your self
+            </p>
+          </div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">store</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+          <ul class="links">
+            <li>
+              <a href="#">facebook</a>
+            </li>
+            <li>
+              <a href="#">instagram</a>
+            </li>
+            <li>
+              <a href="#">snapchat</a>
+            </li>
+            <li>
+              <a href="#">telegram</a>
+            </li>
+          </ul>
+          <div class="newsList">
+            <form>
+              <input type="email" placeholder="your email address" />
+              <button>Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="FooterTop">
+          <i class="fa-solid fa-circle-arrow-up"></i>
+        </div>
+        <p>copy right reserved &copy; <span> mohammed dhedy 2024</span></p>
+      </div>
+      <div style="color: var(--sub-text-color); text-align: center">
+        car brands icon by
+        <a
+          style="color: var(--blue-color); text-decoration: none"
+          target="_blank"
+          href="https://icons8.com"
+          >Icons8</a
+        >
+      </div>
+    </footer>
 
-    <div style="color: white; text-align: center">
-      car icons by <a target="_blank" href="https://icons8.com">Icons8</a>
-    </div>
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
