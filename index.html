@@ -13,6 +13,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="scrollLine"></div>
+    <div class="upBtn"><i class="fa-solid fa-circle-arrow-up"></i></div>
     <header>
       <div class="container">
         <div class="logo">
@@ -20,26 +22,27 @@
         </div>
         <nav>
           <ul class="navMenu">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">store</a></li>
-            <li><a href="#">about</a></li>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#store">store</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
           <i class="fa-solid fa-bars-staggered OpenMenu"></i>
           <i class="fa-brands fa-opencart cartIcon"></i>
         </nav>
       </div>
     </header>
-    <main>
+    <main id="home" data-aos="flip-up">
       <div class="container">
         <div class="content">
           <i class="fa-solid fa-diamond"></i>
           <h1>carmony</h1>
           <p>choose the best <span>OF</span> the best !</p>
-          <a href="#"><span>start</span></a>
+          <a href="#store"><span>start</span></a>
         </div>
       </div>
     </main>
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <img
           data-aos="fade-left"
@@ -64,7 +67,7 @@
         </div>
       </div>
     </section>
-    <section class="store">
+    <section id="store" class="store">
       <div class="container">
         <h3>browse out available cars</h3>
         <div class="thumbnail" data-aos="fade-up">
@@ -168,16 +171,20 @@
     </section>
     <section class="carsOverView">
       <div class="container">
-        <img src="images/icons8-bmw.svg" alt="" />
-        <img src="images/icons8-citroen.svg" alt="" />
-        <img src="images/icons8-jeep.svg" alt="" />
-        <img src="images/icons8-kia.svg" alt="" />
-        <img src="images/icons8-porsche.svg" alt="" />
-        <img src="images/icons8-tesla.svg" alt="" />
-        <img src="images/icons8-volkswagen-100.svg" alt="" />
+        <img data-aos="fade-right" src="images/icons8-bmw.svg" alt="" />
+        <img data-aos="fade-right" src="images/icons8-citroen.svg" alt="" />
+        <img data-aos="fade-right" src="images/icons8-jeep.svg" alt="" />
+        <img data-aos="fade-left" src="images/icons8-kia.svg" alt="" />
+        <img data-aos="fade-left" src="images/icons8-porsche.svg" alt="" />
+        <img data-aos="fade-left" src="images/icons8-tesla.svg" alt="" />
+        <img
+          data-aos="fade-left"
+          src="images/icons8-volkswagen-100.svg"
+          alt=""
+        />
       </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container">
         <div class="ContactHead">
           <h3>git in touch</h3>
@@ -188,21 +195,21 @@
         </div>
 
         <div class="contactsMethods">
-          <div class="method">
+          <div data-aos="fade-right" class="method">
             <i class="fa-solid fa-location-dot"></i>
             <p>palestine arraba/jenin</p>
           </div>
-          <div class="method">
+          <div data-aos="fade-down" class="method">
             <i class="fa-solid fa-phone"></i>
             <p>+970 595036555</p>
           </div>
-          <div class="method">
+          <div data-aos="fade-left" class="method">
             <i class="fa-regular fa-envelope"></i>
             <p>mhmddhedy1234@gmail.com</p>
           </div>
         </div>
 
-        <form>
+        <form data-aos="fade-up">
           <h4>send us a message</h4>
           <div>
             <input required type="text" placeholder="Name" />
@@ -232,7 +239,7 @@
         </form>
       </div>
     </section>
-    <footer>
+    <footer data-aos="flip-up">
       <div class="container">
         <div class="content">
           <div class="logo">
@@ -243,27 +250,35 @@
             </p>
           </div>
           <ul class="links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">store</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">privacy policy</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#store">store</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#privacy">privacy policy</a></li>
           </ul>
           <ul class="links">
             <li>
-              <a href="#">facebook</a>
+              <a  target="_blank" href="https://facebook.com/profile.php?id=100008092711288"
+                >facebook</a
+              >
             </li>
             <li>
-              <a href="#">instagram</a>
+              <a  target="_blank" href="https://instagram.com/mohammad_dhedy/">instagram</a>
             </li>
             <li>
-              <a href="#">snapchat</a>
+              <a href="#"  target="_blank">snapchat</a>
             </li>
             <li>
-              <a href="#">telegram</a>
+              <a
+                href="https://www.tiktok.com/@mohammaddhedy1?_t=8r9Mpb9GJhi&_r=1"
+                target="_blank">tiktok</a
+              >
             </li>
           </ul>
           <div class="newsList">
+            <p style="margin: 0 0 20px; text-transform: capitalize">
+              subscribe to our news list
+            </p>
             <form>
               <input type="email" placeholder="your email address" />
               <button>Subscribe</button>

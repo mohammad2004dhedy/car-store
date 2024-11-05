@@ -1,4 +1,37 @@
-// nav js code start
+// global components codes start
+// -------- the scroll line
+let scrollLine = document.querySelector(".scrollLine");
+let pageHeight =
+  document.documentElement.scrollHeight - document.documentElement.clientHeight;
+window.addEventListener("scroll", () => {
+  let scrollTop = document.documentElement.scrollTop;
+  scrollLine.style.width = `${(scrollTop / pageHeight) * 100}%`;
+});
+// ----------------------- the fixed up btn
+let upBtn = document.querySelector(".upBtn");
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 400) {
+    upBtn.classList.add("active");
+  } else {
+    upBtn.classList.remove("active");
+  }
+});
+upBtn.addEventListener("click", () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+// --------------footer up btn
+let FooterTop = document.querySelector(".FooterTop");
+FooterTop.addEventListener("click", () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+// ----------------- nav js code start
 let navMenu = document.querySelector(".navMenu");
 let OpenMenu = document.querySelector("nav .OpenMenu");
 let cartIcon = document.querySelector("nav .cartIcon");
@@ -15,6 +48,8 @@ navMenuItems.forEach((item) => {
   });
 });
 // nav js code end
+
+// ------------------ global components codes end -------------------
 // store js code start
 let thumbnailItems = document.querySelectorAll(".thumbnail span");
 let StoreCards = document.querySelectorAll(".store .container .content .card");
