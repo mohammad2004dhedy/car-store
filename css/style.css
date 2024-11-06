@@ -345,6 +345,7 @@ main .container .content > a span {
 /* store section start */
 .store {
   padding: 25px 0;
+  min-height: 80vh;
 }
 .store .container h3 {
   text-align: center;
@@ -354,12 +355,15 @@ main .container .content > a span {
   margin: 0 0 50px;
 }
 .store .container .content {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 300px));
-  gap: 15px;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
 .store .container .content .card {
+  min-width: 270px;
+  max-width: 300px;
   border-radius: 8px;
   background: #2f2f2f81;
   color: white;
@@ -449,13 +453,17 @@ main .container .content > a span {
   font-size: 13px;
   transition: 400ms;
 }
-.thumbnail span img {
-  width: 100%;
-  object-fit: cover;
-}
 .thumbnail span.active {
   background: var(--blue-color);
   border: none;
+}
+@media (max-width:767px){
+  .thumbnail{
+    gap: 10px;
+  }
+  .thumbnail span{
+    font-size:10px;
+  }
 }
 /* store section end */
 /* offers section start */
@@ -792,6 +800,9 @@ footer .container > p span {
   footer .container .content .links:first-of-type {
     border-bottom: solid 1px var(--sub-text-color);
     padding: 0 0 20px;
+  }
+  footer .container .content .logo p{
+    text-align: center;
   }
 }
 /* footer end */
